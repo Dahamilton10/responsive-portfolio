@@ -1,0 +1,239 @@
+#navigation{
+    float: right;
+    height: 20px;
+}
+/* I got this from https://www.w3schools.com/css/css_navbar.asp */
+ul {
+/* This configures unordered lists. */
+    list-style-type: none;
+/* This removes the default settings for lists. In this case its mostly to remove the dots the would go infront of each item in the list. */
+    margin: 0;
+/* This sets the margin of the list. */
+    padding: 0;
+/* This sets the padding of the list. */
+    overflow: hidden;
+/* This makes it so that if content overflows then the excess is hidden from view. */
+    background-color: white;
+/* This sets the background color of the list. */
+    position: absolute;
+/* This sets the position of the list to be fixed on the page. */
+    top: 5%;
+/* This sets how far away from the top of the page the list is. */
+    left: 80%;
+/* This sets how far away from the left the list is. */
+  }
+  
+  li {
+/* This is a configuration of the contents of the list. */
+    float: left;
+/* This sets the list to float to the left, it shows up on the right side of the paage because of how the ul is configured. */
+    border-right:1px solid rgba(128,128,128,0.3);
+/* This sets the border on the right of the list contents. the rgba color was taken from https://www.google.com/search?q=what+is+grey+in+rgb&rlz=1C1CHBF_enUS860US860&oq=what+is+grey+in+rgb&aqs=chrome..69i57j0.3976j1j7&sourceid=chrome&ie=UTF-8 and its just a value for red green blue and the alpha of the color. */
+  }
+  
+  li a {
+/* This is a configuration to things in a li and an a tag */
+    display: block;
+/* this makes it so that this displays as a block element */
+    color: grey;
+/* This sets the text color. */
+    text-align: center;
+/* This sets the text color. */
+    padding: 1px 16px;
+/* This sets the padding on the top and bottom then left and right. */
+    text-decoration: none;
+/* This removes the text decorations that may be on this from other css here, like underlining or something. */
+  }
+  li:last-child {
+/* This is a configuration of the last thing in the contents of a list. */
+    border-right: none;
+/* This removes the border on the right. */
+  }
+#name-container{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+h1{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    background-color: #4aaaa5;
+    border-color: #cccccc;
+    height: 60px;
+    width: 300px;
+    margin: 0px;
+    font-size: 32px;
+    margin-left: 150px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+#main-content{
+    background-image: url('../images/concrete_seamless.png');
+    background-repeat: repeat;
+    padding: 50px;
+    padding-bottom: 70px;
+    border-top: 1px solid rgba(128,128,128,0.3);
+    border-bottom: 2px solid rgba(128,128,128,0.3);
+}
+h2{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    color: #4aaaa5;
+    border-bottom: 2px solid rgba(128,128,128,0.3);
+}
+#about-me{
+    background-color: white;
+    width: 960px;
+    padding: 50px;
+    margin-left: 100px;
+    line-height: 20px;   
+}
+#about-me-picture{
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+#index{
+    background-color: white;
+    width: 960px;
+    padding: 50px;
+    margin-left: 100px;
+    line-height: 20px;
+    overflow: auto;
+}
+.portfolio-picture{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.portfolio-picture-banner{
+    position: relative;
+    background-color: #4aaaa5;
+    color: white;
+    width: 200px;
+    margin-top: 140px;
+    text-align: center;
+    height: 30px;
+}
+h3{
+    position: absolute;
+    margin-top: 4px;
+    font-weight: 100;
+    width: 100%;
+/* Got help from ta (Peter). Turns out that the padding along with not having the width set to 100% was making it so that the text in h3 to be off center. */
+}
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 32px;
+}
+/* I got most of this code off https://www.w3schools.com/css/css_attribute_selectors.asp and https://www.w3schools.com/css/css_form.asp */
+input[type="text"] {
+/* This is a configuration for text inputs, names in this case. */
+    width: 100%;
+/* This sets the size of the place you input your text. */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+/* This sets the font that shows up when you put text into the input area. */
+    margin-bottom: 10px;
+/* This puts a margin on the bottom of the text input area. */
+    background-color: white;
+/* This designates the background color of the text input area. */
+  }
+  
+  input[type="button"] {
+/* This is a configuration for button inputs. */
+    width: 120px;
+/* This sets the size of the button. */
+    height: 35px;
+/* This sets the height of the button. */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+/* This sets the font used on the button. */
+    font-size: 18px;
+/* This sets the size of the writing on the button. */
+    background-color: #4aaaa5;
+/* This sets the background color of the button. */
+    color: white;
+/* This sets the color of the text on the button. */
+  }
+textarea {
+/* This is a configuration of textarea. */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+/* This sets the font of the text in textarea. */
+    width: 100%;
+/* This sets the width of textarea. */
+    height: 150px;
+/* This sets the width of textarea. */
+    padding: 12px 20px;
+/* This sets the padding of textarea. */
+    box-sizing: border-box;
+/* This lets the border of the box be counted twards the size of the box. */
+    border: 1px solid #ccc;
+/* This sets the border of textarea. */
+    background-color: white;
+/* This sets the background color of textarea. */
+    font-size: 16px;
+/* This sets the size of the text in textarea. */
+    resize: none;
+/* This makes it so you cant change the size of textarea. */
+  }
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top:8px solid #4aaaa5;
+    background-color: #666666;
+    font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+@media screen and (min-width: 640px) {
+    ul {
+        left: 60%;
+    }
+    h1 {
+        margin-left: 75px;
+    }
+    #about-me {
+        width: 60%;
+        margin-left: 25px;
+    }
+    #index {
+       width: 60%;
+       margin-left: 25px;
+    }
+}
+@media screen and (min-width: 768px) {
+    ul {
+        left: 65%;
+    }
+    #about-me {
+        width: 75%;
+    }
+    #index {
+       width: 75%;
+    }
+}
+@media screen and (min-width: 980px) {
+ ul {
+     left: 65%;
+ }
+ #about-me {
+     width: 60%;
+ }
+ #index {
+    width: 60%;
+ }
+}
