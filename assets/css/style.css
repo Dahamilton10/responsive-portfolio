@@ -204,10 +204,16 @@ footer{
         left: 65%;
     }
     #about-me {
-        width: 60%;
+        width: 88%;
+        /* padding-right: 0px; */
+        margin-left: 0px;
     }
     #index {
-       width: 60%;
+       width: 85%;
+       margin-left: 25px;
+    }
+    h1 {
+        margin-left: 100px;
     }
 }
 @media screen and (max-width: 768px) {
